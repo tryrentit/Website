@@ -1,70 +1,68 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>رينت ات | Rent It</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent It</title>
+  <link rel="icon" type="image/png" href="logo.svg">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      direction: rtl;
-      background-color: #f8f8f8;
+      font-family: sans-serif;
+      background-color: #f9f9f9;
     }
+
     header {
-      background-color: #1e90ff;
+      background-color: #000;
       color: white;
-      padding: 15px 30px;
+      padding: 10px 20px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
+      justify-content: space-between;
     }
+
+    header img {
+      height: 40px;
+    }
+
     nav a {
-      margin: 5px 10px;
       color: white;
+      margin-left: 15px;
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      padding: 30px;
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1607443130927-2dfd9c355f88');
+      background-size: cover;
+      background-position: center;
+      color: white;
       text-align: center;
+      padding: 120px 20px;
     }
-    .section {
-      margin-top: 50px;
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
     }
-    .en {
-      direction: ltr;
-      text-align: left;
-      color: #444;
-      margin-top: 10px;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
+
     footer {
       background-color: #1e90ff;
       color: white;
-      padding: 30px 20px;
       text-align: center;
-      margin-top: 60px;
+      padding: 30px 20px;
     }
+
+    .footer-buttons img {
+      height: 40px;
+      margin: 10px;
+    }
+
     .footer-buttons a {
+      color: white;
       display: inline-block;
-      margin: 10px 15px;
-      padding: 12px 20px;
-      background-color: white;
-      color: #1e90ff;
-      border-radius: 5px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .footer-buttons a:hover {
-      background-color: #f0f0f0;
+      margin: 10px;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -72,63 +70,43 @@
 
   <header>
     <a href="index.html">
-  <img src="logo.svg" alt="رينت ات" style="height: 40px;">
+      <img src="logo.svg" alt="Rent It Logo">
     </a>
     <nav>
-      <a href="index.html">الرئيسية / Home</a>
-      <a href="pricing.html">الأسعار / Pricing</a>
-      <a href="terms.html">الشروط / Terms</a>
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="terms.html">Terms</a>
+      <a href="faq.html">FAQ</a>
     </nav>
   </header>
 
-  <div class="container">
-    <h1>مرحبًا بك في رينت ات</h1>
-    <p>استأجر سكوترك بسهولة، وابدأ رحلتك في دقائق.</p>
-
-    <div class="en">
-      <h2>Welcome to Rent It</h2>
-      <p>Rent an e-scooter in seconds. Simple, fast, and convenient.</p>
-    </div>
-
-    <div class="section">
-      <h2>لماذا رينت ات؟</h2>
-      <ul>
-        <li>🔋 بطارية قوية</li>
-        <li>🛡️ نظام أمان مدمج</li>
-        <li>💳 الدفع المباشر بالبطاقة</li>
-      </ul>
-
-      <div class="en">
-        <h3>Why Rent It?</h3>
-        <ul>
-          <li>🔋 Long-lasting battery</li>
-          <li>🛡️ Built-in safety and GPS</li>
-          <li>💳 Direct card payments — no wallet needed</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <section class="hero">
+    <h1>Rent what you need, easily!</h1>
+    <p>With رينت ات، تأجير السكوترات ما صار أسهل من جذي</p>
+  </section>
 
   <footer>
-    <h3>حمّل التطبيق أو تواصل معنا</h3>
+    <h3>📱 حمل التطبيق أو تواصل معنا</h3>
     <div class="footer-buttons">
-      <div class="footer-buttons">
-  <a href="https://apps.apple.com/kw/app/rent-it-scooter-sharing/id6742490628" target="_blank">
-    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
-         alt="Download on the App Store" style="height: 40px;">
-  </a>
 
-  <a href="https://play.google.com/store/apps/details?id=com.otoride.rentit" target="_blank">
-    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
-         alt="Get it on Google Play" style="height: 45px;">
-  </a>
+      <a href="https://apps.apple.com/kw/app/rent-it-scooter-sharing/id6742490628" target="_blank">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+             alt="Download on the App Store">
+      </a>
 
-  <a href="mailto:info@tryrentit.com?subject=Partner%20Request&body=Hello%2C%20I%E2%80%99m%20interested%20in%20hosting%20your%20scooters.%20Here%20are%20my%20details%3A%0A%0AName%3A%0ACompany%3A%0ALocation%3A%0A%0A">🤝 Become a Partner</a>
+      <a href="https://play.google.com/store/apps/details?id=com.otoride.rentit" target="_blank">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+             alt="Get it on Google Play">
+      </a>
 
-  <a href="mailto:info@tryrentit.com">📧 Contact Us</a>
-</div>
-      <a href="mailto:support@tryrentit.com?subject=Partner%20Request&body=Hello%2C%20I’m%20interested%20in%20hosting%20your%20scooters.%20Here%20are%20my%20details%3A%0A%0AName%3A%0ACompany%3A%0ALocation%3A%0A%0A">🤝 كن شريكًا</a>
-      <a href="mailto:support@tryrentit.com">📧 تواصل معنا</a>
+      <br><br>
+
+      <a href="mailto:info@tryrentit.com?subject=Partner%20Request&body=Hello%2C%20I%E2%80%99m%20interested%20in%20hosting%20your%20scooters.%20Here%20are%20my%20details%3A%0A%0AName%3A%0ACompany%3A%0ALocation%3A%0A%0A">
+        🤝 Become a Partner
+      </a>
+
+      <a href="mailto:info@tryrentit.com">📧 Contact Us</a>
+
     </div>
   </footer>
 
