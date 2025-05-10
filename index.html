@@ -21,9 +21,12 @@
       align-items: center;
       justify-content: space-between;
     }
-    header img {
-      height: 40px;
-    }
+  header img {
+    height: auto;
+    max-height: 40px;
+    width: auto;
+    max-width: 100%;
+  }
     nav a {
       color: white;
       margin-left: 15px;
@@ -39,36 +42,42 @@
       text-align: center;
       padding: 120px 20px;
     }
-    .hero h1 {
+  .hero h1 {
       font-size: 48px;
       margin-bottom: 10px;
     }
-    .hero p {
-      font-size: 20px;
-      opacity: 0.9;
-    }
-
+  .hero p {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
     footer {
       background-color: #1e90ff;
       color: white;
       text-align: center;
       padding: 30px 20px;
     }
-    footer h3 {
-      margin: 0 0 15px;
-    }
-    .footer-buttons img {
-      height: 40px;
-      margin: 0 10px;
-      vertical-align: middle;
-    }
-    .footer-buttons a {
-      color: white;
-      display: inline-block;
-      margin: 10px;
-      text-decoration: underline;
-      font-weight: bold;
-    }
+   .footer-buttons {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-buttons img {
+  height: 40px;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.footer-buttons a {
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-buttons a:hover {
+  text-decoration: underline;
+}
 
     @media (max-width: 600px) {
       header, .footer-buttons {
