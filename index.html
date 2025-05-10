@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rent It</title>
-  <link rel="icon" type="image/png" href="logo.svg">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
   <style>
     body {
       margin: 0;
       font-family: sans-serif;
       background-color: #f9f9f9;
+      color: #333;
     }
 
     header {
@@ -20,11 +21,9 @@
       align-items: center;
       justify-content: space-between;
     }
-
     header img {
       height: 40px;
     }
-
     nav a {
       color: white;
       margin-left: 15px;
@@ -40,10 +39,13 @@
       text-align: center;
       padding: 120px 20px;
     }
-
     .hero h1 {
       font-size: 48px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
     }
 
     footer {
@@ -52,17 +54,32 @@
       text-align: center;
       padding: 30px 20px;
     }
-
+    footer h3 {
+      margin: 0 0 15px;
+    }
     .footer-buttons img {
       height: 40px;
-      margin: 10px;
+      margin: 0 10px;
+      vertical-align: middle;
     }
-
     .footer-buttons a {
       color: white;
       display: inline-block;
       margin: 10px;
       text-decoration: underline;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      header, .footer-buttons {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 8px 0;
+      }
+      .hero h1 {
+        font-size: 32px;
+      }
     }
   </style>
 </head>
@@ -88,25 +105,19 @@
   <footer>
     <h3>📱 حمل التطبيق أو تواصل معنا</h3>
     <div class="footer-buttons">
-
       <a href="https://apps.apple.com/kw/app/rent-it-scooter-sharing/id6742490628" target="_blank">
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
              alt="Download on the App Store">
       </a>
-
       <a href="https://play.google.com/store/apps/details?id=com.otoride.rentit" target="_blank">
         <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
              alt="Get it on Google Play">
       </a>
-
       <br><br>
-
       <a href="mailto:info@tryrentit.com?subject=Partner%20Request&body=Hello%2C%20I%E2%80%99m%20interested%20in%20hosting%20your%20scooters.%20Here%20are%20my%20details%3A%0A%0AName%3A%0ACompany%3A%0ALocation%3A%0A%0A">
         🤝 Become a Partner
       </a>
-
       <a href="mailto:info@tryrentit.com">📧 Contact Us</a>
-
     </div>
   </footer>
 
