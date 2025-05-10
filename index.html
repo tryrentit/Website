@@ -4,102 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rent It</title>
-  <link rel="icon" type="image/svg+xml" href="logo.svg">
   <style>
     body {
       margin: 0;
       font-family: sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #fff;
+      color: #000;
     }
-
     header {
       background-color: #000;
-      color: white;
-      padding: 10px 20px;
+      color: #fff;
+      padding: 15px 20px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
     }
-  header img {
-    height: auto;
-    max-height: 40px;
-    width: auto;
-    max-width: 100%;
-  }
+    header img {
+      height: 30px;
+    }
     nav a {
-      color: white;
-      margin-left: 15px;
+      color: #fff;
       text-decoration: none;
-      font-weight: bold;
+      margin-left: 20px;
+      font-size: 14px;
     }
-
     .hero {
-      background-image: url('https://images.unsplash.com/photo-1607443130927-2dfd9c355f88');
-      background-size: cover;
-      background-position: center;
-      color: white;
       text-align: center;
-      padding: 120px 20px;
+      padding: 100px 20px 40px;
     }
-  .hero h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
     }
-  .hero p {
-    color: #fff;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-}
+    .hero p {
+      font-size: 16px;
+      color: #555;
+      direction: rtl;
+    }
     footer {
-      background-color: #1e90ff;
-      color: white;
+      background-color: #000;
+      color: #fff;
       text-align: center;
-      padding: 30px 20px;
+      padding: 40px 20px;
     }
-   .footer-buttons {
-  padding: 20px;
-  text-align: center;
-}
-
-.footer-buttons img {
-  height: 40px;
-  margin: 10px;
-  vertical-align: middle;
-}
-
-.footer-buttons a {
-  color: white;
-  display: inline-block;
-  margin: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer-buttons a:hover {
-  text-decoration: underline;
-}
-
-    @media (max-width: 600px) {
-      header, .footer-buttons {
-        flex-direction: column;
-      }
-      nav a {
-        margin: 8px 0;
-      }
-      .hero h1 {
-        font-size: 32px;
-      }
+    .footer-links {
+      margin: 20px 0;
+    }
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 14px;
+    }
+    .store-buttons img {
+      height: 40px;
+      margin: 10px;
+      filter: grayscale(100%) brightness(100%);
     }
   </style>
 </head>
 <body>
 
   <header>
-    <a href="index.html">
-      <img src="logo.svg" alt="Rent It Logo">
-    </a>
+    <img src="logo.svg" alt="Rent It Logo">
     <nav>
-      <a href="index.html">Home</a>
+      <a href="#">Home</a>
       <a href="pricing.html">Pricing</a>
       <a href="terms.html">Terms</a>
       <a href="faq.html">FAQ</a>
@@ -112,21 +81,18 @@
   </section>
 
   <footer>
-    <h3>📱 حمل التطبيق أو تواصل معنا</h3>
-    <div class="footer-buttons">
+    <p>حمل التطبيق أو تواصل معنا</p>
+    <div class="store-buttons">
       <a href="https://apps.apple.com/kw/app/rent-it-scooter-sharing/id6742490628" target="_blank">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-             alt="Download on the App Store">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
       </a>
       <a href="https://play.google.com/store/apps/details?id=com.otoride.rentit" target="_blank">
-        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-             alt="Get it on Google Play">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
       </a>
-      <br><br>
-      <a href="mailto:info@tryrentit.com?subject=Partner%20Request&body=Hello%2C%20I%E2%80%99m%20interested%20in%20hosting%20your%20scooters.%20Here%20are%20my%20details%3A%0A%0AName%3A%0ACompany%3A%0ALocation%3A%0A%0A">
-        🤝 Become a Partner
-      </a>
-      <a href="mailto:info@tryrentit.com">📧 Contact Us</a>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:info@tryrentit.com?subject=Partner%20Request">Become a Partner</a>
+      <a href="mailto:info@tryrentit.com">Contact Us</a>
     </div>
   </footer>
 
