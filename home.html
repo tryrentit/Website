@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>رينت ات</title>
+  <title>Rent it</title>
   <link rel="icon" type="image/svg+xml" href="2.png">
   <style>
     body {
@@ -29,13 +29,13 @@
     }
 
     .logo-container img {
-      height: 30px;
+      height: 45px;
     }
 
     .logo-container span {
       margin-left: 10px;
-      font-weight: bold;
-      font-size: 20px;
+      font-weight: normal;
+      font-size: 16px;
       color: black;
     }
 
@@ -64,30 +64,43 @@
       font-size: 16px;
       color: #444;
     }
-
+    
     footer {
-      background-color: white;
-      color: black;
-      text-align: center;
-      padding: 40px 20px;
-    }
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 40px 20px 20px;
+  margin-top: 60px;
+}
 
-    .store-buttons img {
-      height: 45px;
-      margin: 10px;
-    }
+.store-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
 
-    .footer-links a {
-      display: inline-block;
-      margin: 10px 15px;
-      color: black;
-      text-decoration: none;
-    }
+.store-buttons p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
 
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
+.store-buttons img {
+  height: 45px;
+  margin: 10px;
+}
 
+.footer-links a {
+  display: inline-block;
+  margin: 10px 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
     @media (max-width: 600px) {
       header {
         flex-direction: column;
@@ -118,16 +131,16 @@
 
   <div class="hero">
     <h1>Rent what you need, easily!</h1>
-    <p>مع رينت ات، تأجير السكوترات صار أبسط من أي وقت مضى</p>
+    <p>Find it, Scan it, Rent it!</p>
   </div>
 <footer>
   <div class="store-buttons">
-    <p>📱 حمل التطبيق</p>
+    <p style="margin-bottom: 0;"> Download the app 📱</p>
     <a href="https://apps.apple.com/kw/app/rent-it-scooter-sharing/id6742490628" target="_blank">
       <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
     </a>
     <a href="https://play.google.com/store/apps/details?id=com.otoride.rentit" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style="height: 45px;">
     </a>
   </div>
   <div class="footer-links">
