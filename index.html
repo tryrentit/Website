@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rent it</title>
@@ -137,7 +139,7 @@
   <div class="lang lang-en active">
     <div class="hero">
       <img src="Scooter.png" class="hero-image">
-      <h1>Rent your scooter, easily!</h1>
+      <h1 data-aos="fade-up">Rent what you need, easily!</h1>
       <p>Find it, Scan it, Rent it!</p>
     </div>
 
@@ -162,7 +164,7 @@
   <div class="lang lang-ar" dir="rtl" style="text-align: right;">
     <div class="hero">
       <img src="Scooter.png" class="hero-image">
-      <h1>استأجر سكوترك بسهولة!</h1>
+      <h1 data-aos="fade-up">استأجر سكوترك بسهولة !</h1>
       <p>اعثر عليه، امسحه، استأجره!</p>
     </div>
 
@@ -198,6 +200,11 @@
     const savedLang = localStorage.getItem('lang') || 'en';
     applyLang(savedLang);
   });
+</script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 </body>
 </html>
