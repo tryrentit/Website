@@ -27,26 +27,16 @@
       justify-content: space-between;
       align-items: center;
     }
-    .logo-container {
-      display: flex;
-      align-items: center;
-    }
-    .logo-container img {
-      height: 30px;
-    }
-    .logo-container span {
-      margin-left: 10px;
-      font-size: 16px;
-      color: black;
-      line-height: 1;
-    }
-    nav a {
+    nav a, nav button {
       color: black;
       text-decoration: none;
       margin-left: 20px;
       font-size: 16px;
+      background: none;
+      border: none;
+      cursor: pointer;
     }
-    nav a:hover {
+    nav a:hover, nav button:hover {
       text-decoration: underline;
     }
     .hero {
@@ -99,10 +89,6 @@
     .lang.active {
       display: block;
     }
-    .lang-toggle {
-      text-align: center;
-      padding: 10px;
-    }
     @media (max-width: 600px) {
       header {
         flex-direction: column;
@@ -121,31 +107,19 @@
 <body>
 
   <header>
-  <div><strong>Home</strong></div>
-  <nav>
-    <a href="home.html">Home</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="terms.html">Terms</a>
-    <a href="faq.html">FAQ</a>
-    <span style="margin-left: 20px;">
+    <div><strong>Rent It</strong></div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="terms.html">Terms</a>
+      <a href="faq.html">FAQ</a>
       <button onclick="setLang('en')">EN</button>
       <button onclick="setLang('ar')">AR</button>
-    </span>
-  </nav>
-</header>
+    </nav>
+  </header>
 
-  <!-- English Content -->
+  <!-- English Section -->
   <div class="lang lang-en active">
-    <header>
-      <div><strong>Home</strong></div>
-      <nav>
-        <a href="home.html">Home</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="terms.html">Terms</a>
-        <a href="faq.html">FAQ</a>
-      </nav>
-    </header>
-
     <div class="hero">
       <img src="Scooter.png" class="hero-image">
       <h1>Rent what you need, easily!</h1>
@@ -169,18 +143,8 @@
     </footer>
   </div>
 
-  <!-- Arabic Content -->
+  <!-- Arabic Section -->
   <div class="lang lang-ar" dir="rtl" style="text-align: right;">
-    <header>
-      <div><strong>الرئيسية</strong></div>
-      <nav>
-        <a href="home.html">الرئيسية</a>
-        <a href="pricing.html">التسعيرة</a>
-        <a href="terms.html">الشروط</a>
-        <a href="faq.html">الأسئلة</a>
-      </nav>
-    </header>
-
     <div class="hero">
       <img src="Scooter.png" class="hero-image">
       <h1>استأجر ما تحتاجه بسهولة!</h1>
