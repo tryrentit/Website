@@ -19,11 +19,17 @@
       justify-content: space-between;
       align-items: center;
     }
-    nav a {
+    nav a, nav button {
       color: black;
       text-decoration: none;
       margin-left: 20px;
       font-size: 16px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    nav a:hover, nav button:hover {
+      text-decoration: underline;
     }
     .content {
       padding: 40px 20px;
@@ -38,8 +44,7 @@
       font-size: 18px;
       margin-top: 30px;
       font-weight: bold;
-      }
-
+    }
     p {
       font-size: 14px;
       line-height: 1.6;
@@ -51,39 +56,91 @@
       padding: 20px;
       margin-top: 60px;
     }
+    .lang {
+      display: none;
+    }
+    .lang.active {
+      display: block;
+    }
   </style>
 </head>
 <body>
+
   <header>
     <div><strong>Terms & Conditions</strong></div>
     <nav>
-      <a href="home.html">Home</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="terms.html">Terms</a>
-      <a href="faq.html">FAQ</a>
+      <!-- English Nav -->
+      <div class="lang lang-en active">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="terms.html">Terms</a>
+        <a href="faq.html">FAQ</a>
+        <button onclick="setLang('en')">EN</button>
+        <button onclick="setLang('ar')">AR</button>
+      </div>
+
+      <!-- Arabic Nav -->
+      <div class="lang lang-ar" dir="rtl" style="text-align: right;">
+        <a href="index.html">الرئيسية</a>
+        <a href="pricing.html">التسعيرة</a>
+        <a href="terms.html">الشروط</a>
+        <a href="faq.html">الأسئلة</a>
+        <button onclick="setLang('en')">EN</button>
+        <button onclick="setLang('ar')">AR</button>
+      </div>
     </nav>
   </header>
 
-  <div class="content">
+  <!-- English Terms -->
+  <div class="lang lang-en active">
+    <div class="content">
+      <h3>1. User Responsibility</h3>
+      <p>All users must follow traffic laws and prioritize their safety while riding. Helmets are recommended.</p>
 
-    <h3>1. User Responsibility</h3>
-    <p>All users must follow traffic laws and prioritize their safety while riding. Helmets are recommended.</p>
+      <h3>2. Damage & Liability</h3>
+      <p>Rent It is not legally responsible for any injuries or damages resulting from the use of our scooters.</p>
 
-    <h3>2. Damage & Liability</h3>
-    <p>Rent It is not legally responsible for any injuries or damages resulting from the use of our scooters.</p>
+      <h3>3. Payment Terms</h3>
+      <p>Users are charged 100 fils per minute. Payments are processed securely via KNET or Apple Pay.</p>
 
-    <h3>3. Payment Terms</h3>
-    <p>Users are charged 100 fils per minute. Payments are processed securely via KNET or Apple Pay.</p>
+      <h3>4. Parking Rules</h3>
+      <p>Scooters must be parked in designated parking zones visible on the app. Improper parking may lead to penalties.</p>
 
-    <h3>4. Parking Rules</h3>
-    <p>Scooters must be parked in designated parking zones visible on the app. Improper parking may lead to penalties.</p>
+      <h3>5. Service Availability</h3>
+      <p>We reserve the right to suspend service in any location or period for operational or legal reasons.</p>
+    </div>
+  </div>
 
-    <h3>5. Service Availability</h3>
-    <p>We reserve the right to suspend service in any location or period for operational or legal reasons.</p>
+  <!-- Arabic Terms -->
+  <div class="lang lang-ar" dir="rtl" style="text-align: right;">
+    <div class="content">
+      <h3>١. مسؤولية المستخدم</h3>
+      <p>يجب على جميع المستخدمين الالتزام بقوانين المرور والحفاظ على سلامتهم أثناء القيادة. يُنصح بارتداء الخوذة.</p>
+
+      <h3>٢. الأضرار والمسؤولية</h3>
+      <p>رينت إت غير مسؤولة قانونيًا عن أي إصابات أو أضرار ناتجة عن استخدام السكوترات.</p>
+
+      <h3>٣. شروط الدفع</h3>
+      <p>يتم احتساب ١٠٠ فلس لكل دقيقة. تتم معالجة المدفوعات بشكل آمن عبر كي نت أو أبل باي.</p>
+
+      <h3>٤. قواعد الوقوف</h3>
+      <p>يجب إيقاف السكوتر في الأماكن المحددة الظاهرة على التطبيق. الوقوف غير الصحيح قد يؤدي إلى غرامات.</p>
+
+      <h3>٥. توفر الخدمة</h3>
+      <p>نحتفظ بالحق في إيقاف الخدمة في أي موقع أو فترة لأسباب تشغيلية أو قانونية.</p>
+    </div>
   </div>
 
   <footer>
     &copy; 2025 Rent It
   </footer>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.lang-' + lang).forEach(el => el.classList.add('active'));
+    }
+  </script>
+
 </body>
 </html>
