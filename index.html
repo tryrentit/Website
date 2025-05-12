@@ -6,20 +6,19 @@
   <title>Rent it</title>
   <style>
     .hero-image {
-  max-width: 60%;
-  height: auto;
-  margin-bottom: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+      max-width: 60%;
+      height: auto;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
     body {
       margin: 0;
       font-family: sans-serif;
       background-color: white;
       color: black;
     }
-
     header {
       background-color: white;
       color: black;
@@ -28,50 +27,41 @@
       justify-content: space-between;
       align-items: center;
     }
-  
     .logo-container {
       display: flex;
       align-items: center;
     }
-
     .logo-container img {
       height: 30px;
     }
-
     .logo-container span {
       margin-left: 10px;
       font-size: 16px;
       color: black;
       line-height: 1;
     }
-
     nav a {
       color: black;
       text-decoration: none;
       margin-left: 20px;
       font-size: 16px;
     }
-
     nav a:hover {
       text-decoration: underline;
     }
-
     .hero {
       text-align: center;
       padding: 80px 20px 40px;
     }
-
     .hero h1 {
       font-size: 32px;
       margin-bottom: 10px;
     }
-
     .hero p {
       font-size: 16px;
       color: #444;
       margin: 0;
     }
-
     footer {
       background-color: white;
       color: black;
@@ -79,7 +69,6 @@
       padding: 60px 20px 20px;
       margin-top: 60px;
     }
-
     .store-buttons {
       display: flex;
       justify-content: center;
@@ -87,38 +76,41 @@
       margin-bottom: 20px;
       flex-wrap: wrap;
     }
-
     .store-buttons p {
       width: 100%;
       font-size: 16px;
       margin-bottom: 15px;
     }
-
     .store-buttons img {
       height: 45px;
     }
-
     .footer-links a {
       display: inline-block;
       margin: 10px 15px;
       color: black;
       text-decoration: none;
     }
-
     .footer-links a:hover {
       text-decoration: underline;
     }
-
+    .lang {
+      display: none;
+    }
+    .lang.active {
+      display: block;
+    }
+    .lang-toggle {
+      text-align: center;
+      padding: 10px;
+    }
     @media (max-width: 600px) {
       header {
         flex-direction: column;
         align-items: center;
       }
-
       nav {
         margin-top: 10px;
       }
-
       .store-buttons {
         flex-direction: column;
         align-items: center;
@@ -128,38 +120,86 @@
 </head>
 <body>
 
-  <header>
-    <div><strong>Home</strong></div>
-    </div>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="terms.html">Terms</a>
-      <a href="faq.html">FAQ</a>
-    </nav>
-  </header>
-
-  <div class="hero">
-    <img src="Scooter.png" class="hero-image">
-    <h1>Rent what you need, easily!</h1>
-    <p>Find it, Scan it, Rent it!</p>
+  <div class="lang-toggle">
+    <button onclick="setLang('en')">English</button>
+    <button onclick="setLang('ar')">العربية</button>
   </div>
 
-  <footer>
-    <div class="store-buttons">
-      <p>Download the app 📱</p>
-      <a href="https://apps.apple.com/kw/app/rent-it-scooter-sharing/id6742490628" target="_blank">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
-      </a>
-      <a href="https://play.google.com/store/apps/details?id=com.otoride.rentit" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style="height: 45px;">
-      </a>
-    </div>
-    <div class="footer-links">
-      <a href="mailto:info@tryrentit.com">Become a Partner 🤝</a>
-      <a href="mailto:info@tryrentit.com">Contact Us 📧</a>
-    </div>
-  </footer>
+  <!-- English Content -->
+  <div class="lang lang-en active">
+    <header>
+      <div><strong>Home</strong></div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="terms.html">Terms</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </header>
 
+    <div class="hero">
+      <img src="Scooter.png" class="hero-image">
+      <h1>Rent what you need, easily!</h1>
+      <p>Find it, Scan it, Rent it!</p>
+    </div>
+
+    <footer>
+      <div class="store-buttons">
+        <p>Download the app 📱</p>
+        <a href="https://apps.apple.com/kw/app/rent-it-scooter-sharing/id6742490628" target="_blank">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.otoride.rentit" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style="height: 45px;">
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:info@tryrentit.com">Become a Partner 🤝</a>
+        <a href="mailto:info@tryrentit.com">Contact Us 📧</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Arabic Content -->
+  <div class="lang lang-ar" dir="rtl" style="text-align: right;">
+    <header>
+      <div><strong>الرئيسية</strong></div>
+      <nav>
+        <a href="home.html">الرئيسية</a>
+        <a href="pricing.html">التسعيرة</a>
+        <a href="terms.html">الشروط</a>
+        <a href="faq.html">الأسئلة</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <img src="Scooter.png" class="hero-image">
+      <h1>استأجر ما تحتاجه بسهولة!</h1>
+      <p>اعثر عليه، امسحه، استأجره!</p>
+    </div>
+
+    <footer>
+      <div class="store-buttons">
+        <p>حمّل التطبيق 📱</p>
+        <a href="https://apps.apple.com/kw/app/rent-it-scooter-sharing/id6742490628" target="_blank">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.otoride.rentit" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style="height: 45px;">
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:info@tryrentit.com">كن شريكًا معنا 🤝</a>
+        <a href="mailto:info@tryrentit.com">تواصل معنا 📧</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.lang-' + lang).forEach(el => el.classList.add('active'));
+    }
+  </script>
 </body>
 </html>
