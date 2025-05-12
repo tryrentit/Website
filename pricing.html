@@ -141,12 +141,22 @@
     &copy; 2025 Rent It
   </footer>
 
-  <script>
-    function setLang(lang) {
-      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
-      document.querySelectorAll('.lang-' + lang).forEach(el => el.classList.add('active'));
-    }
-  </script>
+<script>
+  function setLang(lang) {
+    localStorage.setItem('lang', lang);
+    applyLang(lang);
+  }
+
+  function applyLang(lang) {
+    document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-' + lang).forEach(el => el.classList.add('active'));
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const savedLang = localStorage.getItem('lang') || 'en';
+    applyLang(savedLang);
+  });
+</script>
 
 </body>
 </html>
