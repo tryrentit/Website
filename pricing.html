@@ -72,30 +72,32 @@
 </head>
 <body>
 
-  <header>
-    <div><strong>Pricing</strong></div>
-    <nav>
-      <!-- English Nav -->
-      <div class="lang lang-en active">
-        <a href="index.html">Home</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="terms.html">Terms</a>
-        <a href="faq.html">FAQ</a>
-        <button onclick="setLang('en')">EN</button>
-        <button onclick="setLang('ar')">AR</button>
-      </div>
+<header>
+  <!-- Language toggle on the left -->
+  <div>
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('ar')">AR</button>
+  </div>
 
-      <!-- Arabic Nav -->
-      <div class="lang lang-ar" dir="rtl" style="text-align: right;">
-        <a href="index.html">الرئيسية</a>
-        <a href="pricing.html">التسعيرة</a>
-        <a href="terms.html">الشروط</a>
-        <a href="faq.html">الأسئلة</a>
-        <button onclick="setLang('en')">EN</button>
-        <button onclick="setLang('ar')">AR</button>
-      </div>
-    </nav>
-  </header>
+  <!-- Navigation on the right -->
+  <nav>
+    <!-- English nav -->
+    <div class="lang lang-en active">
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="terms.html">Terms</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+
+    <!-- Arabic nav -->
+    <div class="lang lang-ar" dir="rtl" style="text-align: right;">
+      <a href="index.html">الرئيسية</a>
+      <a href="pricing.html">التسعيرة</a>
+      <a href="terms.html">الشروط</a>
+      <a href="faq.html">الأسئلة</a>
+    </div>
+  </nav>
+</header>
 
   <!-- English Section -->
   <div class="lang lang-en active">
