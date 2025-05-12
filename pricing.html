@@ -75,16 +75,29 @@
   <header>
     <div><strong>Pricing</strong></div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="terms.html">Terms</a>
-      <a href="faq.html">FAQ</a>
-      <button onclick="setLang('en')">EN</button>
-      <button onclick="setLang('ar')">AR</button>
+      <!-- English Nav -->
+      <div class="lang lang-en active">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="terms.html">Terms</a>
+        <a href="faq.html">FAQ</a>
+        <button onclick="setLang('en')">EN</button>
+        <button onclick="setLang('ar')">AR</button>
+      </div>
+
+      <!-- Arabic Nav -->
+      <div class="lang lang-ar" dir="rtl" style="text-align: right;">
+        <a href="index.html">الرئيسية</a>
+        <a href="pricing.html">التسعيرة</a>
+        <a href="terms.html">الشروط</a>
+        <a href="faq.html">الأسئلة</a>
+        <button onclick="setLang('en')">EN</button>
+        <button onclick="setLang('ar')">AR</button>
+      </div>
     </nav>
   </header>
 
-  <!-- English Content -->
+  <!-- English Section -->
   <div class="lang lang-en active">
     <div class="content">
       <p>Pay as you go. Simple and affordable.</p>
@@ -103,7 +116,7 @@
     </div>
   </div>
 
-  <!-- Arabic Content -->
+  <!-- Arabic Section -->
   <div class="lang lang-ar" dir="rtl" style="text-align: right;">
     <div class="content">
       <p>ادفع على قدر استخدامك. بسيطة وميسّرة.</p>
